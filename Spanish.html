@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            width: 80%;
+            text-align: left; /* Alinea el texto a la izquierda */
+            margin-left: 5%; /* Ajusta la posición del elemento dentro de la página */
+        }
+
+        #pdf-preview {
+            width: 80%;
+            height: 190vh;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        video {
+            width: 80%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 80%; /* Ajusta la imagen al ancho de la pantalla */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Español Profesional y Académico</h1>
+    <h1>Cristina Fernández Quiroga</h1>
+    </br>
+    </br>
+    <h2>Oferta</h2>
+    <embed id="pdf-preview" src="Oferta.pdf" type="application/pdf">
+    </br>
+    <h2>Carta Motivación</h2>
+    <embed id="pdf-preview" src="Carta motivación.pdf" type="application/pdf">
+    </br>
+    <h2>Currículum</h2>
+    <embed id="pdf-preview" src="CV.pdf" type="application/pdf">
+    </br>   
+    <h2>Currículum Infográfico</h2>
+    <img src="CVInfografico.jpeg">
+    </br>
+    <h2>Videocurrículum</h2>
+    <video controls>
+        <source src="VideoCV.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </br>
+    <h2>Entrada blog divulgativo</h2>
+    <embed id="pdf-preview" style="height: 700vh;" src="Blog Divulgativo.pdf" type="application/pdf">
+    </br>  
+</body>
+</html>
